@@ -63,9 +63,9 @@ jobs:
           GEMINI_REQUEST_DELAY: '3.0'
           
           # OpenAI 兼容 API（备选）
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_BASE_URL: ${{ vars.OPENAI_BASE_URL || secrets.OPENAI_BASE_URL }}
-          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || secrets.OPENAI_MODEL }}
+          OPENAI_API_KEY: ${{ secrets.sk-sp-cafd7f0d68534e4ebb9e28261548686b }}
+          OPENAI_BASE_URL: ${{ vars.https://dashscope.aliyuncs.com/compatible-mode/v1 || secrets.https://dashscope.aliyuncs.com/compatible-mode/v1 }}
+          OPENAI_MODEL: ${{ vars.qwen3.5-plus || secrets.qwen3.5-plus }}
           
           # ==========================================
           # 数据源
@@ -132,7 +132,7 @@ jobs:
           # ==========================================
           # 自选股配置
           # ==========================================
-          STOCK_LIST: ${{ vars.STOCK_LIST || secrets.STOCK_LIST || '600519' }}
+          STOCK_LIST: ${{ vars.STOCK_LIST || secrets.STOCK_LIST || '601698' }}
           
           # ==========================================
           # 运行配置 ⬅️ 新增！
