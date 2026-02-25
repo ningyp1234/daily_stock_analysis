@@ -63,9 +63,9 @@ jobs:
           GEMINI_REQUEST_DELAY: '3.0'
           
           # OpenAI 兼容 API（备选）
-          OPENAI_API_KEY: ${{ secrets.sk-sp-cafd7f0d68534e4ebb9e28261548686b }}
+          OPENAI_API_KEY: ${{ sk-sp-cafd7f0d68534e4ebb9e28261548686b }}
           OPENAI_BASE_URL: ${{ https://dashscope.aliyuncs.com/compatible-mode/v1 || https://dashscope.aliyuncs.com/compatible-mode/v1 }}
-          OPENAI_MODEL: ${{ vars.qwen3.5-plus || secrets.qwen3.5-plus }}
+          OPENAI_MODEL: ${{ qwen3.5-plus || qwen3.5-plus }}
           
           # ==========================================
           # 数据源
@@ -91,9 +91,9 @@ jobs:
           FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
           
           # 方式三：Telegram
-          TELEGRAM_BOT_TOKEN: ${{ secrets.8556230416:AAHgqtYRI-b6tR70CeT_yVOQ6pqaVdHDBBA }}
-          TELEGRAM_CHAT_ID: ${{ secrets.ningeasyclaw_bot }}
-          TELEGRAM_MESSAGE_THREAD_ID: ${{ secrets.8556230416 }}
+          TELEGRAM_BOT_TOKEN: ${{ 8556230416:AAHgqtYRI-b6tR70CeT_yVOQ6pqaVdHDBBA }}
+          TELEGRAM_CHAT_ID: ${{ ningeasyclaw_bot }}
+          TELEGRAM_MESSAGE_THREAD_ID: ${{ 8556230416 }}
           
           # 方式四：邮件
           EMAIL_SENDER: ${{ vars.EMAIL_SENDER || secrets.EMAIL_SENDER }}
